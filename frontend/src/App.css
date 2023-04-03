@@ -1,0 +1,4 @@
+.App {
+    min-height: 800px;
+    background: linear-gradient(to bottom right, rgb(64, 69, 72), rgb(120, 122, 123));
+}
