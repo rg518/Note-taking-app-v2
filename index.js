@@ -36,7 +36,6 @@ app.post("/api/addNew", async (req, res) => {
     title,
     description,
   });
-  console.log(keeperObj);
   try {
     const data = await keeperObj.save();
     const keeperList = await Keeper.find();
