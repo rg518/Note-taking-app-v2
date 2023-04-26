@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/getAll")
+      .get(`${REACT_APP_BASE_URL}/api/getAll`)
       .then((res) => setKeeperList(res.data));
   }, []);
 
