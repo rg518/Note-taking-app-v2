@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get(`${REACT_APP_BASE_URL}/api/getAll`)
+      .get(`${process.env.REACT_APP_BASE_URL}/api/getAll`)
       .then((res) => setKeeperList(res.data));
   }, []);
 
