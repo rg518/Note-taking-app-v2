@@ -19,7 +19,7 @@ const AddKeeper = ({ setKeeperList }) => {
   const add = () => {
     if (keeperObj.title) {
       axios
-        .post("http://localhost:3001/api/addNew", keeperObj)
+        .post(`${REACT_APP_BASE_URL}/api/addNew`, keeperObj)
         .then((res) => setKeeperList(res.data));
       setKeeperObj({
         title: "",

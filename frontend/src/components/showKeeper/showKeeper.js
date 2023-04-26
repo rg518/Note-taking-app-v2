@@ -5,7 +5,7 @@ import axios from "axios";
 const ShowKeeper = ({ keeperList, setKeeperList }) => {
   const deleteKeeper = (id) => {
     axios
-      .post("http://localhost:3001/api/delete", { id: id })
+      .post(`${REACT_APP_BASE_URL}/api/delete`, { id: id })
       .then((res) => setKeeperList(res.data));
   };
 
